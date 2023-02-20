@@ -12,6 +12,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@font-face {
+  font-family: "Custom-Font";
+  src: url("./assets/fonts/righteous-regular-webfont.woff");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 :root {
   --bs-blue: #378dfc;
@@ -3811,7 +3817,9 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: 50rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: relative;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -5880,12 +5888,13 @@ textarea.form-control-lg {
 
 .carousel-item {
   position: relative;
-  display: none;
+   /* code below commented out because it affected proper tranition showing a blank */
+  /* display: none; */
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11589,4 +11598,179 @@ textarea.form-control-lg {
 html {
   position: relative;
   min-height: 100%;
+}
+
+@media (max-height: 1100px) {
+
+}
+
+.main-container {
+  /* border used for debugging and ensure each section had valid spacing*/
+  /* border: red solid 2px; */
+  height: 92vh;
+  width:100%;
+  min-height: fit-content;
+
+}
+.main-spacer {
+  padding-top: 60px;
+}
+.transform {
+  transition: 5s ease-out 5s ease-in 1s ease-in-out;
+    opacity: 90%;
+
+}
+.fullscreen {
+  height: 100vh;
+  width:100%;
+}
+.fullscreen-img {
+  width: 100%;
+  height: auto;
+}
+.center-cropped {
+  width: 300px;
+  height: 300px;
+  background-image: url('https://images.unsplash.com/photo-1569867037406-6b9ad775b22e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.center-cropped img {
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+}
+.info-spacer {
+  padding: 8px;
+}
+.center-div-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-div-child {
+  position: absolute;
+}
+.ontop-layer-1 {
+  z-index: 1;
+}
+.ontop-layer-2 {
+  z-index: 2;
+}
+#info {
+  display: flex;
+  padding: 15px;
+
+  /* color: white; */
+  /* filter: blur(6px); */
+  text-align: center;
+  opacity: 90%;
+  width: 85%;
+  height: 18%;
+  min-height: fit-content;
+  align-content: center;
+  /* justify-content: space-evenly; */
+  /* backdrop-filter: blur(20px); */
+  /* backdrop-filter: blur(6px); */
+}
+
+@media (max-width: 1100px) {
+  .info {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1101px) {
+  .info {
+    flex-direction: row;
+  }
+}
+
+.info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 15px;
+  margin: 15px;
+  justify-content: center;
+  align-content: center;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+}
+.foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.blur {
+  height: fit-content;
+  width: fit-content;
+  filter: blur(6px);
+}
+
+@media (max-width: 1100px) {
+  .info-header{
+  font-size: 30px;
+  }}
+  @media (min-width: 1101px) {
+    .info-header{
+    font-size: 70px;
+    }
+    .info-body{
+      font-size: 35px;
+    }
+  }
+.info-header {
+  font-family: "Custom-Font";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  height: 35%
+}
+.info-body {
+  font-family: "Custom-Font";
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10%;
+  /* justify-content: center;
+  align-items: center; */
+}
+.surround {
+  height: 100%;
+  width: 100%;
+}
+#background {
+  width: 100%;
+  height: fit-content;
+  z-index: -1;
+}
+.info-item {
+  flex: 3;
+}
+#profile{
+  flex: 1;
+}
+.grid {
+  padding: 15px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+.grid-item {
+ margin: 25px;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
