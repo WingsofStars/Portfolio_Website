@@ -11705,7 +11705,7 @@ padding-bottom: 50px;
   text-align: center;
   opacity: 90%;
   width: 85%;
-  height: 18%;
+  height: 80vh;
   min-height: fit-content;
   align-content: center;
   /* justify-content: space-evenly; */
@@ -11875,7 +11875,7 @@ padding-bottom: 50px;
   margin-bottom: 25px;
 }
 .stats-container {
-  height: 30vh;
+  height: 35vh;
 }
 .enlarge:hover {
   transform: scale(1.1);

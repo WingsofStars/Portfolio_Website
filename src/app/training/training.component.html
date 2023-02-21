@@ -8,67 +8,59 @@
     <div *ngIf="blockIsValid; else ElseBlock">
         <div class="grid">
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[0].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[0].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[0].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[1].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[1].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[1].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[2].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[2].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[2].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[3].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[3].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[3].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[4].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[4].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[4].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[5].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[5].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[5].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[6].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[6].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[6].Information}}</p>
                 </div>
             </div>
             <div class="card border-primary mb-3 grid-item" style="max-width: 20rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">{{arrayOFTrainingObjects[7].place}}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h4 class="card-title">{{arrayOFTrainingObjects[7].course}}</h4>
+                    <p class="card-text">{{arrayOFTrainingObjects[7].Information}}</p>
                 </div>
             </div>
         </div>
@@ -77,99 +69,82 @@
     <ng-template #ElseBlock>
 
         <div id="training-Carousel" class="carousel slide " data-interval="false">
-            
-            <div class="carousel-inner" >
+
+            <div class="carousel-inner">
                 <div class="carousel-item active" id="card1">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header1</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[0].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[0].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[0].Information}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" id="card2">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header2</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[1].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[1].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[1].Information}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" id="card2">
+                <div class="carousel-item" id="3">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header3</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[2].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[2].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[2].Information}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" id="card2">
+                <div class="carousel-item" id="card4">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header4</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[3].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[3].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[3].Information}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" id="card2">
+                <div class="carousel-item" id="card5">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header5</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[4].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[4].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[4].Information}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" id="card2">
+                <div class="carousel-item" id="card6">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header6</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[5].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[5].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[5].Information}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" id="card2">
+                <div class="carousel-item" id="card7">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header7</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[6].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[6].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[6].Information}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" id="card2">
+                <div class="carousel-item" id="card8">
                     <div class="card border-primary grid-item">
-                        <div class="card-header">Header8</div>
+                        <div class="card-header">{{arrayOFTrainingObjects[7].place}}</div>
                         <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
+                            <h4 class="card-title">{{arrayOFTrainingObjects[7].course}}</h4>
+                            <p class="card-text">{{arrayOFTrainingObjects[7].Information}}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
 
 
             <a class="carousel-control-prev" href="#training-Carousel" role="button" data-slide="prev">
@@ -183,7 +158,7 @@
                 <span class="sr-only"></span>
             </a>
         </div>
-        
+
     </ng-template>
 
 
