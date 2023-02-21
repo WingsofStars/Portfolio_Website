@@ -11858,3 +11858,16 @@ padding-bottom: 50px;
 #about-me-card {
   width: 100%;
 }
+
+#email-form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 85%;
+
+}
+#contact-me-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}

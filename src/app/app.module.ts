@@ -9,6 +9,7 @@ import { TrainingComponent } from './training/training.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { EmailJSResponseStatus } from '@emailjs/browser/es/models/EmailJSResponseStatus';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     TrainingComponent,
     PortfolioComponent,
     AboutMeComponent,
-    LandingPageComponent
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,

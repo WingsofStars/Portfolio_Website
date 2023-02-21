@@ -1,8 +1,47 @@
 <div class="main-container main-spacer">
+    <div class="modal fade" id="comfirmation-Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Email Confirmation</h5>
+                    
+                </div>
+                <div id="comfirmation-model-body" class="modal-body">
+                    Sending the email to taylorldelbridge@gmail.com . . .
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="info-header-secondary">
         <p>
             Contact Me
         </p>
     </header>
+    <div id="contact-me-div">
+        <div id="email-form">
+            <div class="form-group">
+                <label for="name-input" class="form-label mt-4">Name</label>
+                <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp"
+                    placeholder="Enter name" required />
+            </div>
+            <div class="form-group">
+                <label for="email-input" class="form-label mt-4">Email address</label>
+                <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp"
+                    placeholder="Enter email" required />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="message-input" class="form-label mt-4">Message</label>
+                <textarea class="form-control" id="message-input" rows="3" spellcheck="false" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#comfirmation-Modal"
+                (click)="sendEmail()" style="margin: 10px;">Submit</button>
+        </div>
 
+    </div>
 </div>
