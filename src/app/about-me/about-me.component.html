@@ -1,23 +1,169 @@
 <div>
-    <div id="background" class="position-absolute"
+    <!-- <div id="background" class="position-absolute"
         style="background-image: url(../../assets/banner1.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 75vh;">
-    </div>
-    <div class="main-container main-spacer ontop-layer-2">
-        <header class="info-header">
+    </div> -->
+    <div class="main-container main-spacer">
+        <header class="info-header-secondary">
             About Me
         </header>
-        <div class="surround">
+        <div class="center-div-parent" id="about-me-center-parent" style="height: 78%;">
             <div class="info">
                 <div class="profile-pic info-item" id="profile">
-                    <img id="profile-pic" src="" alt="Pic of Me">
+                    <img id="profile-pic" src="../../assets/profile-pic.jfif" alt="Pic of Me">
                 </div>
-                <div class="info-item">
-                    <!-- this part has the info about me and can switch to a view where you can see my skills -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident odit soluta saepe, mollitia
-                    dolorem et molestias illum amet numquam dignissimos. Nesciunt, et fugiat quas iusto laudantium
-                    aspernatur eos doloribus laboriosam.
+                <div id="about-me-info" class="info-item">
+
+                    <div id="about-me-card" class="card bg-secondary mb-3">
+                        <div id="about-me-header" class="card-header btn-group" role="group">
+                            <button type="button" class="btn btn-secondary" (click)="showInfoDiv()">
+                                <!-- Show my info -->
+                                About Me
+                            </button>
+                            <button type="button" class="btn btn-secondary" (click)="showProgressDiv()">
+                                <!-- Show progress -->
+                                My Skills
+                            </button>
+                        </div>
+                        <div class="card-body" id="about-me-body">
+                            <div *ngIf="isInfoShowing; else ElseBlock" class="card-text">
+                                <div class="card-text">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, dolor.
+                                        Perspiciatis totam veritatis cupiditate commodi voluptas impedit ex natus, saepe
+                                        praesentium laudantium, ad numquam pariatur! Tenetur magni nam distinctio
+                                        aperiam?
+                                    </p>
+                                </div>
+                            </div>
+                            <ng-template #ElseBlock>
+                                <div>
+                                    <div class="grid-row">
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div id="skill1" class="grid-item inner-grid">
+                                            <h6>
+                                                skill 1
+                                            </h6>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

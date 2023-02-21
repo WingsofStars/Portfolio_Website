@@ -11,7 +11,7 @@ export class TrainingComponent {
 screenHeight: number = window.innerHeight;
 screenWidth:number = window.innerWidth;
 blockIsValid:boolean = false;
- 
+
 
 
   @HostListener('window:resize', ['$event'])
