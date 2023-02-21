@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { EmailJSResponseStatus } from '@emailjs/browser/es/models/EmailJSResponseStatus';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { EmailJSResponseStatus } from '@emailjs/browser/es/models/EmailJSRespons
     PortfolioComponent,
     AboutMeComponent,
     LandingPageComponent,
+    StatisticsComponent,
   ],
   imports: [
     BrowserModule,

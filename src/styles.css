@@ -221,7 +221,10 @@ dd {
 }
 
 blockquote {
+  font-family: "Custom-font";
+  font-size: 60px;
   margin: 0 0 1rem;
+  padding: 7px;
 }
 
 b,
@@ -603,10 +606,11 @@ progress {
 }
 
 .blockquote-footer {
+  padding: 7px;
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #7f8a99;
+  color: (rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)));
 }
 .blockquote-footer::before {
   content: "— ";
@@ -11837,7 +11841,6 @@ padding-bottom: 50px;
   cursor: pointer;
 }
 #profile-pic {
-  width: 150px;
   border-radius: 50%;
 }
 
@@ -11870,4 +11873,20 @@ padding-bottom: 50px;
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+}
+.stats-container {
+  height: 30vh;
+}
+.enlarge:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-height:1100px) {
+  #links-section{
+  flex-direction: column;
+
+}} 
+#links-section {
+  display: flex; flex-flow: row wrap; align-items: center; justify-content: center;
 }
