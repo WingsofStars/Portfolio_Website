@@ -37,7 +37,7 @@ export class ContactMeComponent {
       (document.getElementById("comfirmation-model-body") as HTMLDivElement).textContent = "The email was sent";
     }, function(error) {
        console.log('FAILED...', error);
-       (document.getElementById("comfirmation-model-body") as HTMLDivElement).textContent = "The email could not be sent for some reason. Well here's my email: taylorldebridge@gmail.com";
+       (document.getElementById("comfirmation-model-body") as HTMLDivElement).textContent = "The email could not be sent for some reason. Well here's my email: ndelbridge@fiverings.dev";
     });
 
     
