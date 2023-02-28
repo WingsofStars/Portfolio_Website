@@ -11699,7 +11699,7 @@ html {
 #info {
   display: flex;
   padding: 20px;
-padding-bottom: 50px;
+  padding-bottom: 35px;
   /* color: white; */
   /* filter: blur(6px); */
   text-align: center;
@@ -11889,4 +11889,10 @@ padding-bottom: 50px;
 }} 
 #links-section {
   display: flex; flex-flow: row wrap; align-items: center; justify-content: center;
+}
+
+#resume-button {
+  font-family: var(--bs-font-sans-serif);
+  width: 100%;
+  height: fit-content;
 }
