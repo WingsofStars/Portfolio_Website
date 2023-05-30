@@ -11,6 +11,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { EmailJSResponseStatus } from '@emailjs/browser/es/models/EmailJSResponseStatus';
 import { StatisticsComponent } from './statistics/statistics.component';
+import { AuxiliumPageComponent } from './auxilium-page/auxilium-page.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { StatisticsComponent } from './statistics/statistics.component';
     AboutMeComponent,
     LandingPageComponent,
     StatisticsComponent,
+    AuxiliumPageComponent,
   ],
   imports: [
     BrowserModule,
