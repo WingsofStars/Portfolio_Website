@@ -13,16 +13,21 @@
                 </div>
                 <div id="about-me-info" class="info-item">
 
-                    <div id="about-me-card" class="card bg-secondary mb-3">
-                        <div id="about-me-header" class="card-header btn-group" role="group">
-                            <button type="button" class="btn btn-dark" (click)="showInfoDiv()">
-                                <!-- Show my info -->
-                                About Me
-                            </button>
-                            <button type="button" class="btn btn-dark" (click)="showProgressDiv()">
-                                <!-- Show progress -->
-                                My Skills
-                            </button>
+                    <div id="about-me-card" class="card bg-light mb-3">
+                        <div id="about-me-header" class="card-header btn-group bg-light" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="" (click)="showInfoDiv()">
+                            <label class="btn btn-outline-primary" for="btnradio1">About Me</label>
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"  (click)="showProgressDiv()">
+                            <label class="btn btn-outline-primary" for="btnradio2">My Skills</label>
+
+                            <!-- <button type="button" class="lead-btn btn btn-dark" >
+                                 Show my info
+                                
+                            </button> -->
+                            <!-- <button type="button" class=" btn btn-primary" >
+                                Show progress 
+                                
+                            </button> -->
                         </div>
                         <div class="card-body" id="about-me-body">
                             <div *ngIf="isInfoShowing; else ElseBlock" class="card-text">

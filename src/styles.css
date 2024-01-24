@@ -11896,3 +11896,22 @@ html {
   width: 100%;
   height: fit-content;
 }
+.lead-btn:hover{
+  --bs-btn-color: #378dfc;
+  --bs-btn-border-color: #378dfc;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #378dfc;
+  --bs-btn-hover-border-color: #378dfc;
+  --bs-btn-focus-shadow-rgb: 55, 141, 252;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #378dfc;
+  --bs-btn-active-border-color: #378dfc;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #378dfc;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #378dfc;
+  --bs-gradient: none;
+}
+#training-Carousel-inner{
+  width: 75%;
+}

@@ -68,9 +68,14 @@
     </div>
     <ng-template #ElseBlock>
 
-        <div id="training-Carousel" class="carousel slide " data-interval="false">
+        <div id="training-Carousel" class="carousel slide " data-interval="false" style="display: flex; justify-content: center;">
+            <a class="carousel-control-prev" href="#training-Carousel" role="button" data-slide="prev" >
+                <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-left"
+                        style="color: black; font-size: xx-large;"></i></span>
+                <b><span class="sr-only"></span></b>
+            </a>
 
-            <div class="carousel-inner">
+            <div id="training-Carousel-inner" class="carousel-inner" >
                 <div class="carousel-item active" id="card1">
                     <div class="card border-primary grid-item">
                         <div class="card-header">{{arrayOFTrainingObjects[0].place}}</div>
@@ -144,14 +149,7 @@
                     </div>
                 </div>
             </div>
-
-
-
-            <a class="carousel-control-prev" href="#training-Carousel" role="button" data-slide="prev">
-                <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-left"
-                        style="color: black; font-size: xx-large;"></i></span>
-                <b><span class="sr-only"></span></b>
-            </a>
+            
             <a class="carousel-control-next" href="#training-Carousel" role="button" data-slide="next">
                 <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-right"
                         style="color: black; font-size: xx-large;"></i></span>
